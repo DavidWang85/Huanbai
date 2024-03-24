@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --mainColor-white: #FEFCFC;
+--mainColor-blue: #162F3A;
+--subColor-blue: #2D5363;
+--subColor-lightBlue: #9BC9DD;
+--mainColor-green: #64C676;
+}
+
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20rem;
+}
+
+
+.d-flex{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-left: -20px;
+}
+
+
+body {
+    margin:  0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    color: var(--mainColor-blue);
+  }
+  
+.tab{
+  /* border: 1px solid var(--mainColor-blue); */
+  background-color: var(--mainColor-white);
+}
+
+.tab ul{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: auto;
+  width: 60%;
+  margin-bottom: 5rem;
+}
+
+.tab ul li{
+  display: inline;
+  color: var(--mainColor-blue);
+  text-align: center;
+  background-color: var(--mainColor-white);
+}
+
+.tab ul li:hover{
+  color: white;
+  cursor: pointer;
+  background-color: var(--mainColor-green);
+  transition: all 0.3s;
+
+}
+
+.content{
+  display: none;
+
+}
+
+.show-content{
+  display: block;
+}
+
+.flex-fill{
+  height: 100%;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--mainColor-blue);
+  border-radius: 20px;
+  margin: 0 3rem;
+  padding: 0.5rem;
+  border: 1px solid var(--mainColor-green);
+  white-space:nowrap;
+}
+
+.active-tab {
+  background-color: #64C676;
+}
+
+
+.flex-fill.active{
+  background-color: #64C676;
+  color: #FEFCFC;
+  -webkit-box-shadow: 1px 10px 30px -10px #66bb6a;
+  -moz-box-shadow: 1px 10px 30px -10px #66bb6a;
+  box-shadow: 1px 10px 30px -8px #66bb6a;
+}
+
+ul.d-flex.routerpage{
+  margin: auto ;
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .flex-fill{
+    width:100%;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0 2rem;
+    padding: 1rem;
+    white-space:nowrap;
+  }
+}

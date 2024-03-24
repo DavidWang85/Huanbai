@@ -1,0 +1,448 @@
+
+.w-120 {
+  max-width: 120rem;
+}
+
+.w-105 {
+  max-width: 105rem;
+}
+
+a.farm-btn {
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  color: #FEFCFC; 
+  font-weight: 600;
+}
+
+  
+.btn__farm--invest {
+  border: 1px solid #66BB6A;
+  color: #ffffff;
+  display: inline-block;
+  min-width: 25rem;
+  margin-top: 4rem;
+  -webkit-box-shadow: 1px 10px 30px -10px #66bb6a;
+  -moz-box-shadow: 1px 10px 30px -10px #66bb6a;
+  box-shadow: 1px 10px 30px -10px #66bb6a;
+  /*
+  Button hover effect resource
+  https://codepen.io/alticreation/pen/zBZwOP
+  */
+  display: inline-block;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn__farm--invest:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #66BB6A;
+  z-index: -2;
+}
+.btn__farm--invest:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: all 0.5s;
+  z-index: -1;
+}
+.btn__farm--invest:hover {
+  color: #66BB6A;
+}
+.btn__farm--invest:hover:before {
+  width: 100%;
+}
+
+.invest__body {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.invest__item__subtitle {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+}
+.invest__item__subtitle::after {
+  position: absolute;
+  content: "";
+  top: 3rem;
+  left: 0;
+  width: 5.6rem;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.invest__item__body {
+  margin: 5rem 0 2.5rem;
+}
+
+.invest__item__title {
+  color: #ffffff;
+  font-size: 3.1rem;
+  max-width: 30rem;
+}
+
+.invest__item_description {
+  font-size: 1.6rem;
+  color: #ffffff;
+  max-width: 30rem;
+}
+
+
+/*End Invest*/
+/*End How Is Works*/
+.how-is-works {
+  background: url("https://raw.githubusercontent.com/mustafadalga/farm-landing-page/master/assets/img/how-is-works-bg.png") no-repeat;
+  background-color: #66BB6A;
+  margin: auto;
+}
+
+.works__content {
+  max-width: 70rem;
+  margin: auto;
+  color: #ffffff;
+  padding: 0 1.5rem;
+}
+
+.works__head {
+  text-align: center;
+}
+
+.works__title {
+  font-size: 3.6rem;
+}
+
+.works__description {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.works__body {
+  margin: 5rem 0 10rem;
+}
+
+.form_progressbar {
+  display: flex;
+  grid-column-gap: 13rem;
+}
+
+.progressbar__step {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 7.2rem;
+  height: 7.2rem;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.progressbar__step.active {
+  background-color: #ffffff;
+  color: #66BB6A;
+}
+.progressbar__step.active:not(:first-child)::after {
+  height: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: progressBarStepAnimate 0.5s linear forwards;
+}
+.progressbar__step:not(:first-child)::before, .progressbar__step:not(:first-child)::after {
+  position: absolute;
+  content: "";
+  right: 100%;
+  width: 13rem;
+  height: 1px;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+
+@keyframes progressBarStepAnimate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.works__footer {
+  display: flex;
+  overflow: hidden;
+}
+
+.works__step__content {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  grid-gap: 2.5rem;
+  transition: 0.5s all linear;
+  padding: 3rem;
+  position: relative;
+  align-items: center;
+}
+.works__step__content::before {
+  position: absolute;
+  content: "";
+  left: 1.5rem;
+  top: 1.5rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+  border-radius: 0.8rem;
+}
+
+.works__step_title {
+  font-size: 2.4rem;
+  flex: 5;
+}
+
+.works__step_description {
+  flex: 6;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/*End How Is Works*/
+/*Testimonials*/
+.testimonials {
+  margin-top: 20rem;
+}
+
+.testimonials__head {
+  position: relative;
+  margin: auto;
+}
+
+.testimonials__quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 11rem;
+  width: auto;
+}
+
+.testimonials__title {
+  font-size: 3.6rem;
+  max-width: 45rem;
+}
+
+.testimonials__body {
+  margin: 8rem auto 4rem;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  position: relative;
+}
+.testimonials__body::before, .testimonials__body::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 10%;
+  background-color: #ffffff;
+  opacity: 0.5;
+  height: 100%;
+  z-index: 1;
+}
+.testimonials__body::before {
+  left: 0;
+  filter: drop-shadow(5rem 0 4rem #ffffff);
+}
+.testimonials__body::after {
+  right: 0;
+  filter: drop-shadow(-5rem 0 4rem #ffffff);
+}
+
+.testimonials__list {
+  display: flex;
+  grid-gap: 2.5rem;
+  position: relative;
+}
+
+.testimonial {
+  flex-shrink: 0;
+  width: 33%;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  filter: drop-shadow(0 0 0.75rem rgba(27, 31, 35, 0.15));
+  transition: transform 0.3s ease;
+}
+.testimonial:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.testimonial__profile {
+  display: flex;
+  grid-gap: 2.5rem;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.testimonial__img {
+  filter: drop-shadow(0 0 0.5rem #66BB6A);
+  width: 7.2rem;
+  height: 7.2rem;
+}
+.testimonial__img img {
+  width: initial;
+  max-width: initial;
+}
+
+.testimonial__name {
+  color: #66BB6A;
+}
+
+.testimonial__title {
+  color: #263238;
+}
+
+.testimonial__description {
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  color: #324148;
+}
+
+.testimonials__footer {
+  margin: auto;
+}
+
+.testimonials__directions {
+  display: flex;
+  grid-gap: 1.5rem;
+}
+
+.btn__testimonials {
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 1.5rem;
+  outline: none;
+  border: none;
+  background-color: #66BB6A;
+  color: #ffffff;
+  -webkit-box-shadow: 1px 10px 30px -10px #66bb6a;
+  -moz-box-shadow: 1px 10px 30px -10px #66bb6a;
+  box-shadow: 1px 10px 30px -10px #66bb6a;
+}
+.btn__testimonials.disable {
+  background-color: #ffffff;
+  color: #263238;
+}
+
+/*End Testimonials*/
+/*Farm Invest */
+.farm-invest {
+  padding: 5rem 2.5rem;
+  text-align: center;
+  background-color: #ffffff;
+  filter: drop-shadow(0 0 0.75rem rgba(27, 31, 35, 0.15));
+  margin: auto;
+
+  margin-bottom: 8rem ;
+  font-size: 20px;
+}
+
+.farm-invest__title {
+  font-size: 3.6rem;
+}
+.farm-invest__title span {
+  color: #66BB6A;
+}
+
+.btn__farm--invest {
+  border: 1px solid #66BB6A;
+  color: #ffffff;
+  display: inline-block;
+  min-width: 25rem;
+  margin-top: 4rem;
+  -webkit-box-shadow: 1px 10px 30px -10px #66bb6a;
+  -moz-box-shadow: 1px 10px 30px -10px #66bb6a;
+  box-shadow: 1px 10px 30px -10px #66bb6a;
+  /*
+  Button hover effect resource
+  https://codepen.io/alticreation/pen/zBZwOP
+  */
+  display: inline-block;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn__farm--invest:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #66BB6A;
+  z-index: -2;
+}
+.btn__farm--invest:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.btn__farm--invest:hover {
+  color: #66BB6A;
+}
+.btn__farm--invest:hover:before {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+  /*Global*/
+.opportunities__title,
+.invest__title,
+.works__title,
+.testimonials__title,
+.farm-invest__title {
+    font-size: 3rem;
+  }
+
+  .invest__description,
+.works__description {
+    font-size: 1.6rem;
+  }
+
+
+  /*End Opportunities*/
+  /*Invest Section*/
+  .invest__body {
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+  }
+}
+@media screen and (max-width: 360px) {
+  /*Invest Section*/
+  .invest__body {
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  }
+
+  /*End Testimonials*/
+  /*Farm Invest*/
+  .btn__farm--invest {
+    width: 80%;
+    min-width: initial;
+  }
+
+  /*End Farm Invest*/
+}

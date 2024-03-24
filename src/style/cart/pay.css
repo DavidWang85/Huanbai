@@ -1,0 +1,22 @@
+#cart {
+    border: 1px solid rgb(127, 127, 127);
+}
+
+.count {
+    text-align: center;
+
+}
+
+.count tr td {
+    bottom: 10px;
+}
+
+.count .border-top td {
+    border-top: 2px solid gray ;
+}
+
+.Finishorder h1 {
+    text-align: center;
+    color: #57B565;
+    margin-top: 15%;
+}

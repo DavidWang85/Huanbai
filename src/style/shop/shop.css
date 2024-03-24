@@ -1,0 +1,128 @@
+#shop-hero {
+    background-image: url("../shop/b1.png");
+    height: 40vh;
+    /* width: 100%; */
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+
+
+#shop-hero span {
+    color: #57B565;
+    font-size: 3.6rem;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#shop-hero p {
+    color: #000000;
+    font-size: 20px;
+}
+
+/* #pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #57B565;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+} */
+
+/* shop Product Start*/
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 300px;
+    padding: 10px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0.06, 0.04);
+    margin: 40px;
+    transition: 0.2s ease;
+    position: relative;
+    border: 1px #a8a8a8;
+    text-align: center;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid #cfcece;
+
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 20px;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #2D5363;
+}
+
+/* 分頁按鈕 start */
+
+#pagination {
+    text-align: center;
+    color: #ffffff;
+}
+
+#pagination span {
+    text-decoration: none;
+    background-color: #7eafc5;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 2px;
+
+}
+
+
+#pagination span .linkToShop {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* 分頁按鈕 end */

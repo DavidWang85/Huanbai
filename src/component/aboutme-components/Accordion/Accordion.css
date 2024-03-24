@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+.mt-50{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.Accordionoo{
+  font-size: 18px;
+  width: 100%;
+}
+
+.text-tile h4{
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .Accordionoo{
+    width: 100%;
+    padding: 0;
+    width: 90vw;
+  }
+}
+

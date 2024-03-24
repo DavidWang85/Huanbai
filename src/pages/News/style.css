@@ -1,0 +1,137 @@
+h1{
+    font-size: 48px;
+    color: var(--mainColor-blue);
+}
+.blog-wrap{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+.blog-goBack{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--mainColor-green);
+    font-weight: 500;
+    margin-bottom: 3rem ;
+    display: block;
+
+}
+
+.blog-goBack span{
+    color: #64C676;
+}
+
+.blog-wrap header{
+    margin: 20px 0 ;
+}
+
+.blog-date{
+    font-size: 2rem;
+    color: #a9a9a9;
+    font-weight: 500;
+}
+
+.blog-wrap img{
+    width: 100%;
+    border-radius: 0 5rem 0 5rem;
+}
+
+.blog-subCategory{
+    display: flex;
+    margin: 10px 0;
+    /* justify-content: center; */
+}
+
+.blog-subCategory > div{
+    margin: .2rem;
+}
+
+.blog-desc{
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    line-height: 1.5;
+    font-size: 1.8rem;
+
+}
+
+.blog-subtitle{
+    color: var(--mainColor-green);
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+.blog-cc{
+    color: #999;
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+.contentCover{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.detail{
+    padding: 1rem;
+    margin: 3rem 0 0 0;
+}
+
+.connection {
+    color: #64C676;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px){
+    .blog-goBack{
+        padding:0 0 0 20px;
+    }
+}
+
+
+.form-btn {
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 20px;
+    color: #999;
+    font-size: 20px;
+  }
+
+  .form-btn .sendmessage{
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  .btn__farm--invest:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #66BB6A;
+    z-index: -2;
+  }
+  .btn__farm--invest:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: all 0.5s;
+    z-index: -1;
+  }
+.sendmessage a:hover {
+    color: #66BB6A;
+  }
+  .form-group .form-btn {
+    color: #fff;
+    text-align: center;
+  }
